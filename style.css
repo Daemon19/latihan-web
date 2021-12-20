@@ -1,0 +1,65 @@
+* {
+    font-family: "Open Sans", sans-serif;
+}
+
+:root {
+    --top-bar-height: 50px;
+}
+
+body {
+    margin-top: calc(var(--top-bar-height) + 20px);
+}
+
+.top-bar {
+    background-color: #39424e;
+    position: fixed;
+    padding: 0 20px;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: var(--top-bar-height);
+}
+
+.top-bar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.top-bar li {
+    display: inline;
+    margin: 20px 16px;
+}
+
+.top-bar a {
+    color: #b7c9cc;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.top-bar a.home {
+    color: #eee;
+}
+
+.top-bar a:hover:not(.home) {
+    color: #fff;
+}
+
+.top-bar .kiri {
+    float: left;
+}
+
+.top-bar .kanan {
+    float: right;
+}
+
+/* TODO: Membuat main content */
+
+.big-title {
+    font-size: 12vmin;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+}
+
+/* TODO: Membuat side bar navigation */
+
+/* TODO: Membuat side bar tentang penulis */
