@@ -1,66 +1,98 @@
 * {
-    font-family: "Open Sans", sans-serif;
+  font-size: 100%;
+  font-family: "Open Sans", sans-serif;
+}
+
+:root {
+  --gray: #eee;
+  --dark-gray: #b7c9cc;
+  --night-black: #39424e;
+  --cyan: #39e8f5;
+  --blue: #127f9b;
 }
 
 /* Tob bar */
 .top-bar {
-    background-color: #39424e;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    padding-bottom: 20px;
-    padding-left: 50px;
-    padding-right: 50px;
+  background-color: var(--night-black);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  line-height: 50px;
 }
 
 .top-bar ul {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .top-bar li {
-    display: inline;
-    --m-left-right: 15px;
-    margin-left: var(--m-left-right);
-    margin-right: var(--m-left-right);
+  display: inline;
+  --m-left-right: 15px;
+  margin-left: var(--m-left-right);
+  margin-right: var(--m-left-right);
 }
 
 .top-bar a {
-    color: #b7c9cc;
-    text-decoration: none;
-    font-size: 18px;
+  color: var(--dark-gray);
+  text-decoration: none;
+  font-size: 1.2rem;
 }
 
 .top-bar a.home {
-    color: #eee;
+  color: var(--gray);
+  font-size: 1.7rem;
 }
 
 .top-bar a:hover:not(.home) {
-    color: #fff;
+  color: white;
 }
 
 .top-bar .kiri {
-    float: left;
+  float: left;
 }
 
 .top-bar .kanan {
-    float: right;
+  float: right;
 }
 
 /* TODO: Membuat main content */
 
 .big-title {
-    font-size: 12vmin;
-    font-family: "Times New Roman", Times, serif;
-    text-align: center;
+  font-size: 12vmin;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
 }
 
 .hero {
-    height: 300px;
-    background-image: url("img/hero.jpg");
-    background-position-y: 50%;
-    border-radius: 10px;
+  height: 300px;
+  background-image: url("img/hero.jpg");
+  background-position-y: 50%;
+  border-radius: 10px;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+.daftar-isi a {
+  color: var(--blue);
+  font-size: 1.2rem;
+  line-height: 40px;
+  text-decoration: none;
+}
+
+.daftar-isi a:hover {
+  text-decoration: underline;
+  text-decoration-color: black;
+}
+
+main article p {
+  font-size: 1.2rem;
 }
 
 /* TODO: Membuat side bar navigation */
@@ -69,5 +101,5 @@
 
 /* Colors */
 .blue {
-    color: #39e8f5
+  color: var(--cyan);
 }
