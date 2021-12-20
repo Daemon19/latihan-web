@@ -1,6 +1,6 @@
 * {
-  font-size: 100%;
   font-family: "Open Sans", sans-serif;
+  font-size: 100%;
 }
 
 :root {
@@ -9,6 +9,15 @@
   --night-black: #39424e;
   --cyan: #39e8f5;
   --blue: #127f9b;
+  --bg-gray: #f8f9fa;
+  --white: #fff;
+}
+
+body {
+  background-color: var(--bg-gray);
+  padding: 12%;
+  padding-top: 60px;
+  padding-bottom: 30px;
 }
 
 /* Tob bar */
@@ -52,18 +61,44 @@
   color: white;
 }
 
-.top-bar .kiri {
+.top-bar-kiri {
   float: left;
 }
 
-.top-bar .kanan {
+.top-bar-kanan {
   float: right;
 }
+/* Akhir top bar */
 
-/* TODO: Membuat main content */
+/* 2 column layout */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  background-color: var(--white);
+  border: 1px solid rgb(211, 211, 211);
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.kiri {
+  width: 65%;
+  float: left;
+  padding: 0px 30px;
+}
+
+.kanan {
+  width: 33%;
+  float: right;
+  padding: 0px 20px;
+}
+/* Akhir 2 columnt layout */
 
 .big-title {
-  font-size: 12vmin;
+  font-size: 6rem;
   font-family: "Times New Roman", Times, serif;
   text-align: center;
 }
@@ -79,6 +114,7 @@ h2 {
   font-size: 2rem;
 }
 
+/* Daftar isi */
 .daftar-isi a {
   color: var(--blue);
   font-size: 1.2rem;
@@ -90,14 +126,12 @@ h2 {
   text-decoration: underline;
   text-decoration-color: black;
 }
+/* Akhir daftar isi */
 
 main article p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  line-height: 1.75rem;
 }
-
-/* TODO: Membuat side bar navigation */
-
-/* TODO: Membuat side bar tentang penulis */
 
 /* Colors */
 .blue {
