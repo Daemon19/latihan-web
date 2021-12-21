@@ -94,6 +94,7 @@ body {
   width: 33%;
   float: right;
   padding: 0px 20px;
+  margin-top: 570px;
 }
 /* Akhir 2 columnt layout */
 
@@ -131,6 +132,10 @@ h2 {
 main article p {
   font-size: 1.1rem;
   line-height: 1.75rem;
+}
+
+main article h2 {
+  padding-top: 50px;
 }
 
 /* Colors */
