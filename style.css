@@ -88,6 +88,7 @@ body {
   width: 65%;
   float: left;
   padding: 0px 30px;
+  padding-bottom: 20px;
 }
 
 .kanan {
@@ -136,6 +137,23 @@ main article p {
 
 main article h2 {
   padding-top: 50px;
+}
+
+.foto-profil {
+  width: 130px;
+  margin-right: 10px;
+  border-radius: 10px;
+  float: left;
+}
+
+aside.kanan p {
+  font-size: .9rem;
+}
+
+footer {
+  margin-top: 40px;
+  text-align: center;
+  font-size: .9rem;
 }
 
 /* Colors */
